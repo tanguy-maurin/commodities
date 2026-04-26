@@ -1,0 +1,19 @@
+import pandas as pd
+
+data = [
+    {"commodity":"Oil", "price":85.3, "currency":"USD"},
+    {"commodity":"Gold", "price":1920.0, "currency":"USD"},
+    {"commodity":"Gas", "price":2.75, "currency":"USD"}
+]
+
+data2 = {
+    "commodity": ["Oil", "Gold", "Gas"],
+    "price": [85.3, 1920.0, 2.75],
+    "currency": ["USD", "USD", "USD"]
+}
+
+print(data)
+print(data2)
+
+df = pd.DataFrame(data)
+print(df)
